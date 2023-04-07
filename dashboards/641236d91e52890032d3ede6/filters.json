@@ -1,4 +1,32 @@
 {
     "filters": [
+        {
+            "isCascading": false,
+            "jaql": {
+                "collapsed": true,
+                "column": "Brand",
+                "datasource": {
+                    "address": "LocalHost",
+                    "database": "aSampleIAAaECommerce",
+                    "fullname": "localhost/Sample ECommerce",
+                    "id": "localhost_aSampleIAAaECommerce",
+                    "live": false,
+                    "title": "Sample ECommerce"
+                },
+                "datatype": "text",
+                "dim": "[Brand.Brand]",
+                "filter": {
+                    "all": true,
+                    "explicit": false,
+                    "multiSelection": true
+                },
+                "firstday": "mon",
+                "isDashboardFilter": true,
+                "locale": "en-us",
+                "merged": true,
+                "table": "Brand",
+                "title": "Brand"
+            }
+        }
     ]
 }
