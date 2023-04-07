@@ -1,0 +1,71 @@
+{
+    "buildBehavior": {
+        "type": "sync"
+    },
+    "columns": [
+        {
+            "hidden": false,
+            "id": "ID",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "ID",
+            "oid": "3fa1cf22-d92e-4286-aae0-c60960b0713d",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "Average_time_of_stay",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "Average_time_of_stay",
+            "oid": "030713fd-8155-434a-8b75-dd2305bd2791",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "Positive",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "Positive",
+            "oid": "482e4cce-d215-4170-9501-e92c97819c80",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "Negative",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "Negative",
+            "oid": "6a3a17e0-4293-4ef6-83cc-dcdf2a8508a2",
+            "precision": 0,
+            "scale": 0,
+            "size": 0,
+            "type": 8
+        }
+    ],
+    "configOptions": {
+        "Table": "a43c184bfLQAac981LQAa4ddeLQAaaea8LQAa62a92429469e"
+    },
+    "dataset": "f136c65f-4f1b-46ab-b43c-b56f19e31eec",
+    "expression": {
+        "expression": "./table.sql",
+        "oid": "d4e80c48-7781-402d-9362-6aefd2cdad10"
+    },
+    "hidden": false,
+    "id": "a43c184bfLQAac981LQAa4ddeLQAaaea8LQAa62a92429469e",
+    "isMaterialized": null,
+    "name": "Conditions time of stay",
+    "oid": "303ab75f-8a9f-4d58-afc0-6b660a446fdc",
+    "tupleTransformations": [
+    ],
+    "type": "custom"
+}

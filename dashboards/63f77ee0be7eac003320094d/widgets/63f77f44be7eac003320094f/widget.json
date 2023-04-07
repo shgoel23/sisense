@@ -1,0 +1,400 @@
+{
+    "_dataSourcePermission": "owner",
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "dashboardid": "63f77ee0be7eac003320094d",
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aSampleIAAaECommerce",
+        "fullname": "localhost/Sample ECommerce",
+        "id": "localhost_aSampleIAAaECommerce",
+        "live": false,
+        "title": "Sample ECommerce"
+    },
+    "desc": null,
+    "metadata": {
+        "ignore": {
+            "all": false,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+            {
+                "items": [
+                    {
+                        "PanelName": "Country",
+                        "instanceid": "C9F05-238A-4C",
+                        "jaql": {
+                            "column": "Country",
+                            "datatype": "text",
+                            "dim": "[Country.Country]",
+                            "merged": true,
+                            "table": "Country",
+                            "title": "Country"
+                        }
+                    }
+                ],
+                "name": "Items"
+            },
+            {
+                "items": [
+                ],
+                "name": "Values"
+            },
+            {
+                "items": [
+                ],
+                "name": "filters"
+            }
+        ],
+        "usedFormulasMapping": {
+        }
+    },
+    "oid": "63f77f44be7eac003320094f",
+    "options": {
+        "autoUpdateOnEveryChange": true,
+        "dashboardFiltersMode": "filter",
+        "drillTarget": "dummy",
+        "selector": true,
+        "title": false,
+        "triggersDomready": true
+    },
+    "style": {
+        "currentCard": {
+            "body": [
+                {
+                    "items": [
+                        {
+                            "class": "",
+                            "columns": [
+                                {
+                                    "items": [
+                                        {
+                                            "class": "",
+                                            "columns": [
+                                                {
+                                                    "items": [
+                                                        {
+                                                            "horizontalAlignment": "left",
+                                                            "spacing": "none",
+                                                            "style": {
+                                                                "color": "#303031",
+                                                                "font-size": "17px"
+                                                            },
+                                                            "text": "Select Your Option",
+                                                            "type": "TextBlock",
+                                                            "weight": "normal"
+                                                        }
+                                                    ],
+                                                    "separator": false,
+                                                    "spacing": "none",
+                                                    "type": "Column",
+                                                    "width": "50%"
+                                                }
+                                            ],
+                                            "style": {
+                                                "background-color": "",
+                                                "justify-content": "left"
+                                            },
+                                            "type": "ColumnSet"
+                                        }
+                                    ],
+                                    "separator": false,
+                                    "spacing": "none",
+                                    "type": "Column",
+                                    "width": "100%"
+                                }
+                            ],
+                            "style": {
+                                "background-color": "",
+                                "justify-content": "left",
+                                "margin-left": "14px",
+                                "margin-top": "0px"
+                            },
+                            "type": "ColumnSet"
+                        },
+                        {
+                            "class": "",
+                            "columns": [
+                                {
+                                    "items": [
+                                        {
+                                            "class": "",
+                                            "columns": [
+                                                {
+                                                    "items": [
+                                                        {
+                                                            "choices": "{choices:Country}",
+                                                            "class": "custom-select",
+                                                            "displayType": "compact",
+                                                            "id": "data.filters[0].filterJaql.members[0]",
+                                                            "style": {
+                                                                "color": "#FFFFFF"
+                                                            },
+                                                            "type": "Input.ChoiceSet",
+                                                            "value": "1"
+                                                        }
+                                                    ],
+                                                    "separator": false,
+                                                    "spacing": "none",
+                                                    "style": {
+                                                        "margin-top": "9px"
+                                                    },
+                                                    "type": "Column",
+                                                    "width": "40%"
+                                                },
+                                                {
+                                                    "items": [
+                                                        {
+                                                            "actions": [
+                                                                {
+                                                                    "data": {
+                                                                        "filters": [
+                                                                            {
+                                                                                "filterJaql": {
+                                                                                    "explicit": true,
+                                                                                    "members": [
+                                                                                        "ABC",
+                                                                                        "DEF",
+                                                                                        "GHI"
+                                                                                    ]
+                                                                                },
+                                                                                "panelName": "Country"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    "style": {
+                                                                        "background-color": "#003865",
+                                                                        "color": "#FFFFFF"
+                                                                    },
+                                                                    "title": "Apply",
+                                                                    "type": "Filters"
+                                                                }
+                                                            ],
+                                                            "type": "ActionSet"
+                                                        }
+                                                    ],
+                                                    "separator": false,
+                                                    "spacing": "none",
+                                                    "type": "Column",
+                                                    "width": "25%"
+                                                },
+                                                {
+                                                    "items": [
+                                                        {
+                                                            "actions": [
+                                                                {
+                                                                    "data": {
+                                                                        "filters": [
+                                                                            {
+                                                                                "filterJaql": {
+                                                                                    "all": true,
+                                                                                    "explicit": true
+                                                                                },
+                                                                                "filterName": "Country"
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    "style": {
+                                                                        "background-color": "#003865",
+                                                                        "color": "#FFFFFF"
+                                                                    },
+                                                                    "title": "Reset",
+                                                                    "type": "Filters"
+                                                                }
+                                                            ],
+                                                            "type": "ActionSet"
+                                                        }
+                                                    ],
+                                                    "separator": false,
+                                                    "spacing": "none",
+                                                    "type": "Column",
+                                                    "width": "10%"
+                                                }
+                                            ],
+                                            "style": {
+                                                "background-color": "",
+                                                "justify-content": "left"
+                                            },
+                                            "type": "ColumnSet"
+                                        }
+                                    ],
+                                    "separator": false,
+                                    "spacing": "none",
+                                    "type": "Column",
+                                    "width": "100%"
+                                }
+                            ],
+                            "spacing": "none",
+                            "style": {
+                                "background-color": "",
+                                "justify-content": "left",
+                                "margin-left": "14px",
+                                "margin-top": "0px"
+                            },
+                            "type": "ColumnSet"
+                        }
+                    ],
+                    "style": {
+                        "align-items": "left",
+                        "background-color": "",
+                        "display": "flex",
+                        "flex-direction": "column",
+                        "flex-wrap": "nowrap",
+                        "justify-content": "left",
+                        "padding-top": "5px"
+                    },
+                    "type": "Container"
+                }
+            ],
+            "carouselAnimation": {
+                "delay": 0,
+                "showButtons": false
+            },
+            "script": "",
+            "showCarousel": true,
+            "style": ".custom-select option{color:black} .custom-select { width: 100%; height: 35px !important; font-size: 100% !important; font-weight: bold; cursor: pointer; border-radius: 10px; background-color: #003865; border: none; border-bottom: 2px solid darkgrey; color: white; padding-left: 10px !important; padding-top:5px !important; appearance: none !important; -webkit-appearance: none; -moz-appearance: none; padding: 10px; }  select::-ms-expand { display: none !important; } .custom-select:hover, .custom-select:focus { color: #F2B900; background-color: white; border-bottom-color: #DCDCDC; }",
+            "title": ""
+        },
+        "currentCardName": "Sgdropddown",
+        "currentConfig": {
+            "actions": {
+                "actionAlignment": "center",
+                "actionsOrientation": "horizontal",
+                "backgroundColor": "white",
+                "buttonSpacing": 20,
+                "color": "",
+                "maxActions": 5,
+                "showCard": {
+                    "actionMode": "inline",
+                    "inlineTopMargin": 16,
+                    "style": "default"
+                },
+                "spacing": "extraLarge"
+            },
+            "containerStyles": {
+                "default": {
+                    "backgroundColor": "",
+                    "foregroundColors": {
+                        "accent": {
+                            "normal": "#2E89FC"
+                        },
+                        "attention": {
+                            "normal": "#cc3300"
+                        },
+                        "black": {
+                            "normal": "#000000"
+                        },
+                        "default": {
+                            "normal": "#000000"
+                        },
+                        "good": {
+                            "normal": "#54a254"
+                        },
+                        "green": {
+                            "normal": "#54a254"
+                        },
+                        "grey": {
+                            "normal": "#5C6372"
+                        },
+                        "lightGreen": {
+                            "normal": "#3ADCCA"
+                        },
+                        "orange": {
+                            "normal": "#f2B900"
+                        },
+                        "red": {
+                            "normal": "#dd1111"
+                        },
+                        "warning": {
+                            "normal": "#e69500"
+                        },
+                        "white": {
+                            "normal": "#ffffff"
+                        },
+                        "yellow": {
+                            "normal": "#ffcb05"
+                        }
+                    }
+                }
+            },
+            "factSet": {
+                "spacing": 20,
+                "title": {
+                    "color": "default",
+                    "size": "default",
+                    "warp": true,
+                    "weight": "bold"
+                },
+                "value": {
+                    "color": "default",
+                    "size": "default",
+                    "warp": true,
+                    "weight": "default"
+                }
+            },
+            "fontFamily": "Open Sans",
+            "fontSizes": {
+                "default": 14,
+                "extraLarge": 32,
+                "large": 50,
+                "medium": 20,
+                "small": 16
+            },
+            "fontWeights": {
+                "bold": 1000,
+                "default": 500,
+                "light": 100
+            },
+            "height": 111,
+            "imageBaseUrl": "",
+            "imageSet": {
+                "imageSize": "medium",
+                "maxImageHeight": 100
+            },
+            "imageSizes": {
+                "default": 40,
+                "large": 160,
+                "medium": 80,
+                "small": 40
+            },
+            "separator": {
+                "lineColor": "#eeeeee",
+                "lineThickness": 1
+            },
+            "spacing": {
+                "default": 5,
+                "extraLarge": 40,
+                "large": 20,
+                "medium": 60,
+                "padding": 0,
+                "small": 20
+            },
+            "supportsInteractivity": true
+        },
+        "narration": {
+            "aggregation": "sum",
+            "display": "above",
+            "enabled": false,
+            "format": "bullets",
+            "labels": [
+                {
+                    "id": "country",
+                    "plural": "Country",
+                    "singular": "Country",
+                    "title": "Country"
+                }
+            ],
+            "up_sentiment": "good",
+            "verbosity": "medium"
+        }
+    },
+    "subtype": "BloX",
+    "title": "",
+    "type": "BloX"
+}

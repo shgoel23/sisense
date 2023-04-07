@@ -1,0 +1,37 @@
+{
+    "filters": [
+        {
+            "disabled": false,
+            "isCascading": false,
+            "jaql": {
+                "collapsed": true,
+                "column": "Country",
+                "datasource": {
+                    "address": "LocalHost",
+                    "database": "aSampleIAAaECommerce",
+                    "fullname": "localhost/Sample ECommerce",
+                    "id": "localhost_aSampleIAAaECommerce",
+                    "live": false,
+                    "title": "Sample ECommerce"
+                },
+                "datatype": "text",
+                "dim": "[Country.Country]",
+                "filter": {
+                    "explicit": true,
+                    "members": [
+                        "Argentina",
+                        "DEF",
+                        "GHI"
+                    ],
+                    "multiSelection": true
+                },
+                "firstday": "mon",
+                "isDashboardFilter": true,
+                "locale": "en-us",
+                "merged": true,
+                "table": "Country",
+                "title": "Country"
+            }
+        }
+    ]
+}

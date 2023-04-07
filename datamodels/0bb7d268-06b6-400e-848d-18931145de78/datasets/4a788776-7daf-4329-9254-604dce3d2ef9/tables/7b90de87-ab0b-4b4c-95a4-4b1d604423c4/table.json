@@ -1,0 +1,103 @@
+{
+    "buildBehavior": {
+        "type": "sync"
+    },
+    "columns": [
+        {
+            "hidden": false,
+            "id": "Name",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "Name",
+            "oid": "c8071949-9159-4a5b-a2c7-9db52d07b623",
+            "precision": 0,
+            "scale": 0,
+            "size": 65536,
+            "type": 18
+        },
+        {
+            "hidden": false,
+            "id": "Surname",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "Surname",
+            "oid": "9507aa57-47c5-4927-b032-357670ce3afc",
+            "precision": 0,
+            "scale": 0,
+            "size": 65536,
+            "type": 18
+        },
+        {
+            "hidden": false,
+            "id": "DOB",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "DOB",
+            "oid": "2315b098-1c1e-40f6-b063-62ad6eec8587",
+            "precision": 0,
+            "scale": 0,
+            "size": 65536,
+            "type": 18
+        },
+        {
+            "hidden": false,
+            "id": "ID",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "ID",
+            "oid": "05fedac5-b3a9-489c-9fb9-139bce34b644",
+            "precision": 15,
+            "scale": 0,
+            "size": 9,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "Gender",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "Gender",
+            "oid": "7dff8209-1373-4fb5-b52e-487f95cd6372",
+            "precision": 0,
+            "scale": 0,
+            "size": 65536,
+            "type": 18
+        }
+    ],
+    "configOptions": {
+        "Table": "Patients.csv",
+        "delimiter": ",",
+        "hasHeader": true,
+        "ignoreFirstRows": 0,
+        "ignoreLastRows": 0,
+        "stringQuote": "\""
+    },
+    "dataset": "4a788776-7daf-4329-9254-604dce3d2ef9",
+    "hidden": false,
+    "id": "Patients.csv",
+    "isMaterialized": false,
+    "name": "Patients",
+    "oid": "7b90de87-ab0b-4b4c-95a4-4b1d604423c4",
+    "tupleTransformations": [
+        {
+            "arguments": {
+                "expression": {
+                    "expression": "[Name]+' '+[Surname]",
+                    "oid": "4b8006fa-8a50-4832-a2c3-9ddd6faa7af2"
+                },
+                "hidden": false,
+                "id": "ace4c17c5LQAa1488LQAa4d56LQAa9c2bLQAae73b80de58c0",
+                "indexed": true,
+                "isUpsertBy": false,
+                "name": "Full Name",
+                "oid": "7a3d2c3f-1649-4ea3-8a90-d9ada49fb14c",
+                "precision": 0,
+                "scale": 0,
+                "size": 65536,
+                "type": 18
+            },
+            "type": "add-column"
+        }
+    ],
+    "type": "base"
+}

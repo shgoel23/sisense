@@ -1,0 +1,97 @@
+[
+    {
+        "columns": [
+            {
+                "column": "05fedac5-b3a9-489c-9fb9-139bce34b644",
+                "dataset": "4a788776-7daf-4329-9254-604dce3d2ef9",
+                "table": "7b90de87-ab0b-4b4c-95a4-4b1d604423c4"
+            },
+            {
+                "column": "3b55288a-5157-4d66-850f-74a0829a776d",
+                "dataset": "a37748c5-84cc-4d23-9bc2-41f4bdf4b045",
+                "table": "94304c2e-b8da-4dcd-9408-8e30d9668a4b"
+            },
+            {
+                "column": "79d77ccf-95ee-4e09-87a9-db5a8b41e73f",
+                "dataset": "af3ea069-bc3e-4634-b364-be8a1b249745",
+                "table": "554a5671-9857-443a-a12f-f040c66f46a4"
+            }
+        ],
+        "elasticube": "0bb7d268-06b6-400e-848d-18931145de78",
+        "oid": "21b9708a-9eb4-4ff4-9693-503a32283011"
+    },
+    {
+        "columns": [
+            {
+                "column": "6821829a-5cc3-40ab-95b1-f472958cfc86",
+                "dataset": "9a2f4e0c-5c51-4e0a-90c8-d354b02f9ab1",
+                "table": "e653a75c-9b90-484a-a09c-bd73bbc52609"
+            },
+            {
+                "column": "ef37ada6-987d-4cbc-b2f0-242b753e2bcb",
+                "dataset": "a37748c5-84cc-4d23-9bc2-41f4bdf4b045",
+                "table": "94304c2e-b8da-4dcd-9408-8e30d9668a4b"
+            },
+            {
+                "column": "a662e94f-0a1d-46cb-b1b0-1b5902a09c22",
+                "dataset": "af3ea069-bc3e-4634-b364-be8a1b249745",
+                "table": "554a5671-9857-443a-a12f-f040c66f46a4"
+            },
+            {
+                "column": "3fa1cf22-d92e-4286-aae0-c60960b0713d",
+                "dataset": "f136c65f-4f1b-46ab-b43c-b56f19e31eec",
+                "table": "303ab75f-8a9f-4d58-afc0-6b660a446fdc"
+            }
+        ],
+        "elasticube": "0bb7d268-06b6-400e-848d-18931145de78",
+        "oid": "553dc564-9fa0-4f13-8562-8bef55be5dbc"
+    },
+    {
+        "columns": [
+            {
+                "column": "350852bf-3c14-4dba-8ac4-6d9b22f80906",
+                "dataset": "7e2b8224-bdb0-4b23-b814-d21cf8c6c9b0",
+                "table": "717e401f-b46f-4443-8a8c-22b2ff5bade0"
+            },
+            {
+                "column": "f8f01f5b-ab67-458e-abf1-fd0cfdfdca38",
+                "dataset": "a37748c5-84cc-4d23-9bc2-41f4bdf4b045",
+                "table": "94304c2e-b8da-4dcd-9408-8e30d9668a4b"
+            }
+        ],
+        "elasticube": "0bb7d268-06b6-400e-848d-18931145de78",
+        "oid": "17066401-2434-48af-9866-0a23ece0dd66"
+    },
+    {
+        "columns": [
+            {
+                "column": "86e85e69-6735-488b-b2f7-7f3176e42eaf",
+                "dataset": "f1ba0dff-549d-4722-890b-34183f2662bc",
+                "table": "dfb840da-a074-474f-9ec8-0ca56162b26f"
+            },
+            {
+                "column": "be465bb3-2a3c-4372-b31c-8fb4af9b04ed",
+                "dataset": "a37748c5-84cc-4d23-9bc2-41f4bdf4b045",
+                "table": "94304c2e-b8da-4dcd-9408-8e30d9668a4b"
+            }
+        ],
+        "elasticube": "0bb7d268-06b6-400e-848d-18931145de78",
+        "oid": "74ebf043-f734-4ff8-ab6f-1e77a96db2a4"
+    },
+    {
+        "columns": [
+            {
+                "column": "b5a6f554-a08c-4e1b-97e8-d58f55e91465",
+                "dataset": "a3954a91-4dc8-4dbd-927d-dd7da784b8ca",
+                "table": "c1669f40-83b3-4e02-b629-4e4be7b1acb1"
+            },
+            {
+                "column": "bb5ea547-a297-4cc9-9df8-177c89b80642",
+                "dataset": "f1ba0dff-549d-4722-890b-34183f2662bc",
+                "table": "dfb840da-a074-474f-9ec8-0ca56162b26f"
+            }
+        ],
+        "elasticube": "0bb7d268-06b6-400e-848d-18931145de78",
+        "oid": "271c8a88-2952-4941-865d-1c9aee2a1cf2"
+    }
+]

@@ -1,0 +1,25 @@
+{
+    "buildDestination": {
+        "destination": "elasticube"
+    },
+    "datasets": [
+        "./4a788776-7daf-4329-9254-604dce3d2ef9/dataset.json",
+        "./7e2b8224-bdb0-4b23-b814-d21cf8c6c9b0/dataset.json",
+        "./9a2f4e0c-5c51-4e0a-90c8-d354b02f9ab1/dataset.json",
+        "./a37748c5-84cc-4d23-9bc2-41f4bdf4b045/dataset.json",
+        "./a3954a91-4dc8-4dbd-927d-dd7da784b8ca/dataset.json",
+        "./af3ea069-bc3e-4634-b364-be8a1b249745/dataset.json",
+        "./f136c65f-4f1b-46ab-b43c-b56f19e31eec/dataset.json",
+        "./f1ba0dff-549d-4722-890b-34183f2662bc/dataset.json"
+    ],
+    "experiments": {
+    },
+    "fiscal": "system",
+    "lastSuccessfulManualBuildStartTime": "2021-04-22T08:46:43.821Z",
+    "oid": "0bb7d268-06b6-400e-848d-18931145de78",
+    "relationType": "regular",
+    "relations": "./relations.json",
+    "schemaId": null,
+    "title": "Sample Healthcare",
+    "type": "extract"
+}

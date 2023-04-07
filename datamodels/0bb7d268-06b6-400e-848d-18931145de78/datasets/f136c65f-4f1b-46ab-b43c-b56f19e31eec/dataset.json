@@ -1,0 +1,8 @@
+{
+    "elasticube": "0bb7d268-06b6-400e-848d-18931145de78",
+    "oid": "f136c65f-4f1b-46ab-b43c-b56f19e31eec",
+    "tables": [
+        "./303ab75f-8a9f-4d58-afc0-6b660a446fdc/table.json"
+    ],
+    "type": "custom"
+}

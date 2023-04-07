@@ -1,0 +1,187 @@
+{
+    "buildBehavior": {
+        "type": "sync"
+    },
+    "columns": [
+        {
+            "hidden": false,
+            "id": "ID",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "ID",
+            "oid": "beca8440-916d-4599-b327-5cd95e44e4ed",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "Patient_ID",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "Patient_ID",
+            "oid": "3b55288a-5157-4d66-850f-74a0829a776d",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "Diagnosis_ID",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "Diagnosis_ID",
+            "oid": "ef37ada6-987d-4cbc-b2f0-242b753e2bcb",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "Room_ID",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "Room_ID",
+            "oid": "be465bb3-2a3c-4372-b31c-8fb4af9b04ed",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "Doctor_ID",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "Doctor_ID",
+            "oid": "f8f01f5b-ab67-458e-abf1-fd0cfdfdca38",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "Admission_Time",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "Admission_Time",
+            "oid": "22591515-94ba-4690-9255-1d9016a562b0",
+            "precision": 0,
+            "scale": 0,
+            "size": 8,
+            "type": 4
+        },
+        {
+            "hidden": false,
+            "id": "Discharge_Time",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "Discharge_Time",
+            "oid": "8eeb038a-00d9-4ee3-a419-c3fe80bf7d9c",
+            "precision": 0,
+            "scale": 0,
+            "size": 8,
+            "type": 4
+        },
+        {
+            "hidden": false,
+            "id": "HAI",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "HAI",
+            "oid": "23ea489e-77ca-41a3-b9f8-942a424604d8",
+            "precision": 0,
+            "scale": 0,
+            "size": 65536,
+            "type": 18
+        },
+        {
+            "hidden": false,
+            "id": "Surgical_Procedure",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "Surgical_Procedure",
+            "oid": "e91dea1b-0dcc-458f-b932-83ff04517fac",
+            "precision": 0,
+            "scale": 0,
+            "size": 65536,
+            "type": 18
+        },
+        {
+            "hidden": false,
+            "id": "SSI",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "SSI",
+            "oid": "8b86eefc-00aa-4f41-92da-eb432b9c2717",
+            "precision": 0,
+            "scale": 0,
+            "size": 65536,
+            "type": 18
+        },
+        {
+            "hidden": false,
+            "id": "Cost_of_admission",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "Cost_of_admission",
+            "oid": "975665c5-7cff-4390-b973-da1f7962a8cb",
+            "precision": 16,
+            "scale": 16,
+            "size": 50,
+            "type": 5
+        },
+        {
+            "hidden": false,
+            "id": "Death",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "Death",
+            "oid": "25f08914-7b2b-4f74-8e11-b2b71599bef9",
+            "precision": 0,
+            "scale": 0,
+            "size": 50,
+            "type": 18
+        }
+    ],
+    "configOptions": {
+        "Table": "Admissions.csv",
+        "delimiter": ",",
+        "hasHeader": true,
+        "ignoreFirstRows": 0,
+        "ignoreLastRows": 0,
+        "stringQuote": "\""
+    },
+    "dataset": "a37748c5-84cc-4d23-9bc2-41f4bdf4b045",
+    "hidden": false,
+    "id": "Admissions.csv",
+    "isMaterialized": false,
+    "name": "Admissions",
+    "oid": "94304c2e-b8da-4dcd-9408-8e30d9668a4b",
+    "tupleTransformations": [
+        {
+            "arguments": {
+                "expression": {
+                    "expression": "HourDiff([Discharge_Time],[Admission_Time])",
+                    "oid": "8d2d8979-0629-429e-9641-39fc523f62e7"
+                },
+                "hidden": false,
+                "id": "a57978b45LQAa91bdLQAa48a5LQAa9b2aLQAa5e4f9f493a5d",
+                "indexed": false,
+                "isUpsertBy": false,
+                "name": "Time of Stay",
+                "oid": "01453b9f-764a-4078-b8b4-9983c1de59d0",
+                "precision": 0,
+                "scale": 0,
+                "size": 65536,
+                "type": 8
+            },
+            "type": "add-column"
+        }
+    ],
+    "type": "base"
+}

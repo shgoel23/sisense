@@ -1,0 +1,228 @@
+{
+    "_dataSourcePermission": "owner",
+    "_toDisableOptionsList": {
+        "widgets": {
+            "duplicate": false
+        }
+    },
+    "dashboardid": "641236d91e52890032d3ede6",
+    "datasource": {
+        "address": "LocalHost",
+        "database": "aSampleIAAaECommerce",
+        "fullname": "localhost/Sample ECommerce",
+        "id": "localhost_aSampleIAAaECommerce",
+        "live": false,
+        "title": "Sample ECommerce"
+    },
+    "desc": null,
+    "metadata": {
+        "ignore": {
+            "all": false,
+            "dimensions": [
+            ],
+            "ids": [
+            ]
+        },
+        "panels": [
+            {
+                "items": [
+                    {
+                        "field": {
+                            "id": "[Commerce.Date (Calendar)]_years",
+                            "index": 0
+                        },
+                        "format": {
+                            "mask": {
+                                "dateAndTime": "MM/dd/y HH:mm",
+                                "days": "shortDate",
+                                "isdefault": true,
+                                "minutes": "HH:mm",
+                                "months": "MM/yyyy",
+                                "quarters": "yyyy Q",
+                                "weeks": "ww yyyy",
+                                "years": "yyyy"
+                            },
+                            "width": 177.2109375
+                        },
+                        "hierarchies": [
+                            "calendar",
+                            "calendar - weeks"
+                        ],
+                        "instanceid": "5586F-3B38-B5",
+                        "jaql": {
+                            "column": "Date",
+                            "datatype": "datetime",
+                            "dim": "[Commerce.Date (Calendar)]",
+                            "level": "quarters",
+                            "merged": true,
+                            "table": "Commerce",
+                            "title": "Quarters in Date"
+                        },
+                        "panel": "rows"
+                    }
+                ],
+                "name": "rows"
+            },
+            {
+                "items": [
+                    {
+                        "field": {
+                            "id": "SUM([2C30A-999])/60*[FEA36-6BD]",
+                            "index": 1
+                        },
+                        "format": {
+                            "color": {
+                                "color": "transparent",
+                                "type": "color"
+                            },
+                            "mask": {
+                                "abbreviations": {
+                                    "b": false,
+                                    "k": false,
+                                    "m": false,
+                                    "t": false
+                                },
+                                "decimals": 2,
+                                "number": {
+                                    "separated": true
+                                }
+                            }
+                        },
+                        "instanceid": "03B01-8404-D0",
+                        "jaql": {
+                            "context": {
+                                "[2C30A-999]": {
+                                    "agg": "sum",
+                                    "column": "Cost",
+                                    "datatype": "numeric",
+                                    "dim": "[Commerce.Cost]",
+                                    "table": "Commerce",
+                                    "title": "Total Cost"
+                                },
+                                "[FEA36-6BD]": {
+                                    "agg": "count",
+                                    "column": "Country ID",
+                                    "datatype": "numeric",
+                                    "dim": "[Commerce.Country ID]",
+                                    "merged": true,
+                                    "table": "Commerce",
+                                    "title": "# of unique Country ID"
+                                }
+                            },
+                            "datatype": "numeric",
+                            "formula": "SUM([2C30A-999])/60*[FEA36-6BD]",
+                            "subtotalAgg": "sum",
+                            "title": "SUM([Total Cost])/60*[# of unique Country ID]",
+                            "type": "measure"
+                        },
+                        "panel": "measures"
+                    }
+                ],
+                "name": "values"
+            },
+            {
+                "items": [
+                ],
+                "name": "columns"
+            },
+            {
+                "items": [
+                    {
+                        "format": {
+                            "mask": {
+                                "dateAndTime": "MM/dd/y HH:mm",
+                                "days": "shortDate",
+                                "isdefault": true,
+                                "minutes": "HH:mm",
+                                "months": "MM/yyyy",
+                                "quarters": "yyyy Q",
+                                "weeks": "ww yyyy",
+                                "years": "yyyy"
+                            }
+                        },
+                        "instanceid": "7D609-374A-30",
+                        "jaql": {
+                            "collapsed": true,
+                            "column": "Date",
+                            "datasource": {
+                                "address": "LocalHost",
+                                "database": "aSampleIAAaECommerce",
+                                "fullname": "localhost/Sample ECommerce",
+                                "id": "localhost_aSampleIAAaECommerce",
+                                "live": false,
+                                "title": "Sample ECommerce"
+                            },
+                            "datatype": "datetime",
+                            "dim": "[Commerce.Date (Calendar)]",
+                            "filter": {
+                                "explicit": true,
+                                "members": [
+                                    "2012-01-01T00:00:00"
+                                ],
+                                "multiSelection": true
+                            },
+                            "firstday": "mon",
+                            "level": "years",
+                            "locale": "en-us",
+                            "merged": true,
+                            "table": "Commerce",
+                            "title": "Years in Date"
+                        },
+                        "panel": "scope"
+                    }
+                ],
+                "name": "filters"
+            }
+        ],
+        "usedFormulasMapping": {
+        }
+    },
+    "oid": "6412376a1e52890032d3edf2",
+    "options": {
+        "autoUpdateOnEveryChange": true,
+        "dashboardFiltersMode": "filter",
+        "drillToAnywhere": true,
+        "imageColumns": [
+        ],
+        "selector": false,
+        "triggersDomready": true
+    },
+    "style": {
+        "automaticHeight": true,
+        "colors": {
+            "columns": false,
+            "headers": false,
+            "members": false,
+            "rows": true,
+            "totals": false
+        },
+        "narration": {
+            "aggregation": "sum",
+            "display": "above",
+            "enabled": false,
+            "format": "bullets",
+            "labels": [
+                {
+                    "id": "quarters_in_date",
+                    "plural": "Quarters in Date",
+                    "singular": "Quarters in Date",
+                    "title": "Quarters in Date"
+                },
+                {
+                    "id": "years_in_date",
+                    "plural": "Years in Date",
+                    "singular": "Years in Date",
+                    "title": "Years in Date"
+                }
+            ],
+            "up_sentiment": "good",
+            "verbosity": "medium"
+        },
+        "pageSize": 25,
+        "rowsGrandTotal": true,
+        "scroll": false
+    },
+    "subtype": "pivot2",
+    "title": "by year sum",
+    "type": "pivot2"
+}

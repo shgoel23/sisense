@@ -1,0 +1,18 @@
+{
+    "buildDestination": {
+        "destination": "elasticube"
+    },
+    "datasets": [
+        "./6564cf73-ccb1-49d5-a816-84fb5978bf7c/dataset.json"
+    ],
+    "experiments": {
+    },
+    "fiscal": "system",
+    "lastSuccessfulManualBuildStartTime": "2021-04-22T08:52:26.644Z",
+    "oid": "f2e6314f-e7ea-4b21-bb2c-ec62fba3f35f",
+    "relationType": "regular",
+    "relations": "./relations.json",
+    "schemaId": null,
+    "title": "Sample Lead Generation",
+    "type": "extract"
+}

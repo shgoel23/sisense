@@ -1,0 +1,48 @@
+{
+    "buildBehavior": {
+        "type": "sync"
+    },
+    "columns": [
+        {
+            "hidden": false,
+            "id": "ID",
+            "indexed": false,
+            "isUpsertBy": false,
+            "name": "ID",
+            "oid": "b5a6f554-a08c-4e1b-97e8-d58f55e91465",
+            "precision": 15,
+            "scale": 0,
+            "size": 9,
+            "type": 8
+        },
+        {
+            "hidden": false,
+            "id": "Divison_name",
+            "indexed": true,
+            "isUpsertBy": false,
+            "name": "Divison_name",
+            "oid": "f216b238-c6e3-4d58-9266-8b67bfa4bd30",
+            "precision": 0,
+            "scale": 0,
+            "size": 65536,
+            "type": 18
+        }
+    ],
+    "configOptions": {
+        "Table": "Divisions.csv",
+        "delimiter": ",",
+        "hasHeader": true,
+        "ignoreFirstRows": 0,
+        "ignoreLastRows": 0,
+        "stringQuote": "\""
+    },
+    "dataset": "a3954a91-4dc8-4dbd-927d-dd7da784b8ca",
+    "hidden": false,
+    "id": "Divisions.csv",
+    "isMaterialized": false,
+    "name": "Divisions",
+    "oid": "c1669f40-83b3-4e02-b629-4e4be7b1acb1",
+    "tupleTransformations": [
+    ],
+    "type": "base"
+}

@@ -1,0 +1,1 @@
+"SELECT [Diagnosis].ID,AVG([Admissions].[Time of Stay]) AS Average_time_of_stay,AVG([Admissions].[Time of Stay])-48 AS Positive,AVG([Admissions].[Time of Stay])+48 AS Negative\nFROM [Admissions]\nJOIN [Diagnosis]\nON [Admissions].Diagnosis_ID = [Diagnosis].ID\nGROUP BY [Diagnosis].ID"
